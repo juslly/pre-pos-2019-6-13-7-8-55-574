@@ -22,9 +22,9 @@ function countSameElements(collection) {
           count += parseInt((collection[i]).replace(/[^0-9]/ig, ""));
         }
         if(collection[i].indexOf(":") != -1){
-         // array.push(((collection[i]).split(":"))[0]);
+          array.push(((collection[i]).split(":"))[0]);
+          count = parseInt((((collection[i]).split(":"))[1]));
           array1.push(count);
-          count += parseInt((((collection[i]).split(":"))[1]));
           
         }
       }
